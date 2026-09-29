@@ -1,0 +1,222 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arabic Society 1A</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Ornamen -->
+    <div class="ornament ornament-left">☪</div>
+    <div class="ornament ornament-right">✦</div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>ع</span>
+            <div>
+                <h2>Arabic Society</h2>
+                <small>1A</small>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#anggota">Anggota</a>
+        </nav>
+
+    </header>
+
+
+    <!-- BERANDA -->
+    <section class="hero" id="beranda">
+
+        <div class="hero-content">
+
+            <div class="arabic-title">
+                العربية
+            </div>
+
+            <p class="welcome">
+                أَهْلًا وَسَهْلًا
+            </p>
+
+            <h1>
+                Arabic Society <span>1A</span>
+            </h1>
+
+            <p class="description">
+                Selamat datang di ruang kebersamaan,
+                pembelajaran, dan kreativitas
+                Arabic Society 1A.
+            </p>
+
+            <button class="enter-button" onclick="masukWebsite()">
+                <span>Masuk</span>
+                <span class="arrow">→</span>
+            </button>
+
+        </div>
+
+        <div class="scroll-down">
+            ↓
+        </div>
+
+    </section>
+
+
+    <!-- TENTANG -->
+    <section class="about" id="tentang">
+
+        <div class="section-title">
+            <span>✦</span>
+            <h2>Tentang Kami</h2>
+            <span>✦</span>
+        </div>
+
+        <p>
+            Arabic Society 1A adalah sebuah ruang untuk belajar
+            bahasa Arab, mengenal budaya Arab, serta membangun
+            kebersamaan melalui berbagai kegiatan yang menarik
+            dan kreatif.
+        </p>
+
+        <div class="arabic-quote">
+            "مَنْ جَدَّ وَجَدَ"
+            <small>Barang siapa bersungguh-sungguh, maka ia akan berhasil.</small>
+        </div>
+
+    </section>
+
+
+    <!-- ANGGOTA -->
+    <section class="members" id="anggota">
+
+        <div class="section-title">
+            <span>✦</span>
+            <h2>Anggota Kami</h2>
+            <span>✦</span>
+        </div>
+
+        <div class="member-grid">
+
+            <div class="member-card">
+                <div class="member-number">01</div>
+                <div class="member-icon">👨🏻‍🎓</div>
+                <h3>Aleksa</h3>
+                <p>Komting</p>
+            </div>
+
+            <div class="member-card">
+                <div class="member-number">02</div>
+                <div class="member-icon">👩🏻‍🎓</div>
+                <h3>Jaylani</h3>
+                <p>Wakomting</p>
+            </div>
+
+            <div class="member-card">
+                <div class="member-number">03</div>
+                <div class="member-icon">👩🏻‍💻</div>
+                <h3>Miftah</h3>
+                <p>Pdd</p>
+            </div>
+
+            <div class="member-card">
+                <div class="member-number">04</div>
+                <div class="member-icon">👩🏻‍💻</div>
+                <h3>Apip</h3>
+                <p>Pdd</p>
+            </div>
+
+            <div class="member-card">
+                <div class="member-number">05</div>
+                <div class="member-icon">👨🏻‍🎓</div>
+                <h3>Ali</h3>
+                <p>Anggota</p>
+            </div>
+
+            <div class="member-card">
+                <div class="member-number">06</div>
+                <div class="member-icon">👩🏻‍🎓</div>
+                <h3>Azka</h3>
+                <p>Anggota</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-arabic">
+            العربية
+        </div>
+
+        <h3>Arabic Society 1A</h3>
+
+        <p>
+            Belajar • Berkarya • Bersama
+        </p>
+
+        <div class="line"></div>
+
+        <small>
+            © 2026 Arabic Society 1A
+        </small>
+
+    </footer>
+
+
+    <!-- MODAL MASUK -->
+    <div class="modal" id="welcomeModal">
+
+        <div class="modal-box">
+
+            <button class="close" onclick="tutupModal()">
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ✦
+            </div>
+
+            <h2>أهلاً وسهلاً</h2>
+
+            <h3>Selamat Datang!</h3>
+
+            <p>
+                Kamu telah memasuki website
+                <strong>Arabic Society 1A</strong>.
+            </p>
+
+            <button class="continue-button" onclick="tutupModal()">
+                Mulai Menjelajah
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
