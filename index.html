@@ -7,10 +7,8 @@
 
     <title>Arabic Society 1A</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -18,143 +16,183 @@
 
 <body>
 
-    <!-- Ornamen -->
-    <div class="ornament ornament-left">☪</div>
-    <div class="ornament ornament-right">✦</div>
-
-
-    <!-- NAVBAR -->
+    <!-- Navbar -->
     <header class="navbar">
-
         <div class="logo">
             <span>ع</span>
             <div>
-                <h2>Arabic Society</h2>
-                <small>1A</small>
+                <strong>Arabic Society</strong>
+                <small>Class 1A</small>
             </div>
         </div>
 
-        <nav>
-            <a href="#beranda">Beranda</a>
-            <a href="#tentang">Tentang</a>
-            <a href="#anggota">Anggota</a>
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">Tentang</a>
+            <a href="#members">Anggota</a>
+            <a href="#matkul">matkul</a>
         </nav>
 
+        <button class="menu-btn" id="menuBtn">☰</button>
     </header>
 
 
-    <!-- BERANDA -->
-    <section class="hero" id="beranda">
-
+    <!-- Hero -->
+    <section class="hero" id="home">
         <div class="hero-content">
 
-            <div class="arabic-title">
-                العربية
+            <div class="arabic-decoration">أَهْلًا وَسَهْلًا</div>
+
+            <p class="welcome">WELCOME TO</p>
+
+            <h1>Arabic Society <span>1A</span></h1>
+
+            <p class="hero-description">
+                Tempat belajar, berbagi, dan berkembang bersama
+                dalam bahasa Arab dan kebudayaannya.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#about" class="btn primary">Kenali Kami</a>
+                <a href="#members" class="btn secondary">Lihat Anggota</a>
             </div>
 
-            <p class="welcome">
-                أَهْلًا وَسَهْلًا
-            </p>
-
-            <h1>
-                Arabic Society <span>1A</span>
-            </h1>
-
-            <p class="description">
-                Selamat datang di ruang kebersamaan,
-                pembelajaran, dan kreativitas
-                Arabic Society 1A.
-            </p>
-
-            <button class="enter-button" onclick="masukWebsite()">
-                <span>Masuk</span>
-                <span class="arrow">→</span>
-            </button>
-
         </div>
 
-        <div class="scroll-down">
-            ↓
+        <div class="hero-decoration">
+            <div class="circle"></div>
+            <div class="arabic-big">العربية</div>
         </div>
-
     </section>
 
 
-    <!-- TENTANG -->
-    <section class="about" id="tentang">
+    <!-- About -->
+    <section class="section about" id="about">
 
         <div class="section-title">
-            <span>✦</span>
-            <h2>Tentang Kami</h2>
-            <span>✦</span>
+            <span>TENTANG KAMI</span>
+            <h2>Arabic Society 1A</h2>
         </div>
 
-        <p>
-            Arabic Society 1A adalah sebuah ruang untuk belajar
-            bahasa Arab, mengenal budaya Arab, serta membangun
-            kebersamaan melalui berbagai kegiatan yang menarik
-            dan kreatif.
-        </p>
+        <div class="about-grid">
 
-        <div class="arabic-quote">
-            "مَنْ جَدَّ وَجَدَ"
-            <small>Barang siapa bersungguh-sungguh, maka ia akan berhasil.</small>
+            <div class="about-card">
+                <div class="icon">📚</div>
+                <h3>Belajar</h3>
+                <p>
+                    Meningkatkan kemampuan bahasa Arab melalui
+                    pembelajaran yang menyenangkan dan kolaboratif.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="icon">🤝</div>
+                <h3>Bersama</h3>
+                <p>
+                    Membangun hubungan pertemanan dan solidaritas
+                    antaranggota Arabic Society 1A.
+                </p>
+            </div>
+
+            <div class="about-card">
+                <div class="icon">🌙</div>
+                <h3>Berkarya</h3>
+                <p>
+                    Mengembangkan kreativitas melalui kegiatan,
+                    acara, dan karya yang berhubungan dengan bahasa Arab.
+                </p>
+            </div>
+
         </div>
-
     </section>
 
 
-    <!-- ANGGOTA -->
-    <section class="members" id="anggota">
+    <!-- Quote -->
+    <section class="quote-section">
+        <div class="quote">
+            <span class="quote-mark">“</span>
+
+            <p>
+                مَنْ جَدَّ وَجَدَ، وَمَنْ زَرَعَ حَصَدَ
+            </p>
+
+            <small>
+                “Barang siapa bersungguh-sungguh, maka ia akan berhasil.”
+            </small>
+        </div>
+    </section>
+
+
+    <!-- Members -->
+    <section class="section members" id="members">
 
         <div class="section-title">
-            <span>✦</span>
-            <h2>Anggota Kami</h2>
-            <span>✦</span>
+            <span>OUR PEOPLE</span>
+            <h2>Anggota Kelas</h2>
         </div>
 
         <div class="member-grid">
 
-            <div class="member-card">
-                <div class="member-number">01</div>
-                <div class="member-icon">👨🏻‍🎓</div>
-                <h3>Aleksa</h3>
-                <p>Komting</p>
-            </div>
+            ```html
+<section class="section members" id="members">
 
-            <div class="member-card">
-                <div class="member-number">02</div>
-                <div class="member-icon">👩🏻‍🎓</div>
-                <h3>Jaylani</h3>
-                <p>Wakomting</p>
-            </div>
+    <div class="section-title">
+        <span>OUR TEAM</span>
+        <h2>Struktur Kelas</h2>
+        <p>Arabic Society 1A</p>
+    </div>
 
-            <div class="member-card">
-                <div class="member-number">03</div>
-                <div class="member-icon">👩🏻‍💻</div>
-                <h3>Miftah</h3>
-                <p>Pdd</p>
-            </div>
+    <h3 class="structure-title">Pengurus Kelas</h3>
 
-            <div class="member-card">
-                <div class="member-number">04</div>
-                <div class="member-icon">👩🏻‍💻</div>
-                <h3>Apip</h3>
-                <p>Pdd</p>
-            </div>
+    <div class="member-grid">
 
-            <div class="member-card">
-                <div class="member-number">05</div>
-                <div class="member-icon">👨🏻‍🎓</div>
-                <h3>Ali</h3>
-                <p>Anggota</p>
-            </div>
+        <!-- KOMTING -->
+        <div class="member-card">
+            <div class="avatar">👑</div>
+            <h3>Aleksa</h3>
+            <p>Komting</p>
+        </div>
 
-            <div class="member-card">
-                <div class="member-number">06</div>
-                <div class="member-icon">👩🏻‍🎓</div>
-                <h3>Azka</h3>
-                <p>Anggota</p>
+        <!-- WAKOMTING -->
+        <div class="member-card">
+            <div class="avatar">⭐</div>
+            <h3>Jaylani</h3>
+            <p>Wakomting</p>
+        </div>
+
+        <!-- PDD -->
+        <div class="member-card">
+            <div class="avatar">📸</div>
+            <h3>Miftah</h3>
+            <p>PDD</p>
+        </div>
+
+    </div>
+
+
+    <h3 class="structure-title">Anggota Kelas</h3>
+
+    <div class="member-grid">
+
+        <!-- NABIL -->
+        <div class="member-card">
+            <div class="avatar">N</div>
+            <h3>Nabil</h3>
+            <p>Member</p>
+        </div>
+
+        <!-- FARIS -->
+        <div class="member-card">
+            <div class="avatar">F</div>
+            <h3>Faris</h3>
+            <p>Member</p>
+        </div>
+
+    </div>
+
+</section>
+```
+
             </div>
 
         </div>
@@ -162,58 +200,132 @@
     </section>
 
 
-    <!-- FOOTER -->
-    <footer>
+    <!-- Agenda -->
+      ```html
+<!-- MATA KULIAH -->
+<section class="section agenda" id="matkul">
 
-        <div class="footer-arabic">
-            العربية
-        </div>
+    <div class="section-title">
+        <span>ACADEMIC</span>
+        <h2>Mata Kuliah</h2>
+        <p>Arabic Society 1A</p>
+    </div>
 
-        <h3>Arabic Society 1A</h3>
+    <div class="agenda-list">
 
-        <p>
-            Belajar • Berkarya • Bersama
-        </p>
-
-        <div class="line"></div>
-
-        <small>
-            © 2026 Arabic Society 1A
-        </small>
-
-    </footer>
-
-
-    <!-- MODAL MASUK -->
-    <div class="modal" id="welcomeModal">
-
-        <div class="modal-box">
-
-            <button class="close" onclick="tutupModal()">
-                ×
-            </button>
-
-            <div class="modal-icon">
-                ✦
+        <!-- Mata Kuliah 1 -->
+        <div class="agenda-item">
+            <div class="agenda-date">
+                <strong>01</strong>
+                <span>MK</span>
             </div>
 
-            <h2>أهلاً وسهلاً</h2>
+            <div>
+                <h3>Bahasa Indonesia</h3>
+                <p>
+                    Ketrampilan Menyimak, Berbicara, Membaca, Menulis
+                </p>
+            </div>
+        </div>
 
-            <h3>Selamat Datang!</h3>
+        <!-- Mata Kuliah 2 -->
+        <div class="agenda-item">
+            <div class="agenda-date">
+                <strong>02</strong>
+                <span>MK</span>
+            </div>
 
-            <p>
-                Kamu telah memasuki website
-                <strong>Arabic Society 1A</strong>.
-            </p>
+            <div>
+                <h3>PPkn</h3>
+                <p>
+                    Pembelajaran ketrampilan dalam berpikir kritis, berkomunikasi, berpartisipasi, dan cinta tanah air
+                </p>
+            </div>
+        </div>
 
-            <button class="continue-button" onclick="tutupModal()">
-                Mulai Menjelajah
-            </button>
+        <!-- Mata Kuliah 3 -->
+        <div class="agenda-item">
+            <div class="agenda-date">
+                <strong>03</strong>
+                <span>MK</span>
+            </div>
 
+            <div>
+                <h3>Al 'arabiyyah At-takamuliyyah</h3>
+                <p>
+                    Pembelajaran mengenai pendekatan yang menggabungkan beberapa ketrampilan bahasa arab secara terpadu
+                </p>
+            </div>
+        </div>
+
+        <!-- Mata Kuliah 4 -->
+        <div class="agenda-item">
+            <div class="agenda-date">
+                <strong>04</strong>
+                <span>MK</span>
+            </div>
+
+            <div>
+                <h3>Ilm aswat</h3>
+                <p>
+                    Pembelajaran bunyi-bunyi bahasa
+                </p>
+            </div>
+        </div>
+
+        <!-- Mata Kuliah 5 -->
+        <div class="agenda-item">
+            <div class="agenda-date">
+                <strong>05</strong>
+                <span>MK</span>
+            </div>
+
+            <div>
+                <h3> Istima' wal hiwarat</h3>
+                <p>
+                    Pembelajaran keterampilan menyimak
+                    dan memahami percakapan bahasa Arab.
+                </p>
+            </div>
         </div>
 
     </div>
 
+</section>
+```
+
+            
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-arabic">
+            العربية تجمعنا
+        </div>
+
+        <h2>Arabic Society 1A</h2>
+
+        <p>
+            Belajar bersama · Bertumbuh bersama · Berkarya bersama
+        </p>
+
+        <div class="social">
+            <a
+    href="https://www.instagram.com/aarabic_society/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="instagram-link"
+>
+    📷 Instagram
+</a>
+        </div>
+
+        <div class="copyright">
+            © <span id="year"></span> Arabic Society 1A. All rights reserved.
+        </div>
+
+    </footer>
 
     <script src="script.js"></script>
 

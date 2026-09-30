@@ -1,105 +1,72 @@
 ```javascript
-// ======================================
-// TOMBOL MASUK
-// ======================================
+// ==========================
+// MOBILE MENU
+// ==========================
 
-function masukWebsite() {
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
 
-    const modal = document.getElementById("welcomeModal");
+menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
 
-    modal.classList.add("active");
-
-}
-
-
-// ======================================
-// TUTUP MODAL
-// ======================================
-
-function tutupModal() {
-
-    const modal = document.getElementById("welcomeModal");
-
-    modal.classList.remove("active");
-
-}
-
-
-// ======================================
-// KLIK DI LUAR MODAL
-// ======================================
-
-const modal = document.getElementById("welcomeModal");
-
-modal.addEventListener("click", function(event) {
-
-    if (event.target === modal) {
-
-        tutupModal();
-
+    if (navMenu.classList.contains("active")) {
+        menuBtn.textContent = "✕";
+    } else {
+        menuBtn.textContent = "☰";
     }
-
 });
 
 
-// ======================================
-// TEKAN ESC UNTUK MENUTUP
-// ======================================
+// Menutup menu setelah memilih navigasi
 
-document.addEventListener("keydown", function(event) {
+const navLinks = document.querySelectorAll("#navMenu a");
 
-    if (event.key === "Escape") {
-
-        tutupModal();
-
-    }
-
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+        menuBtn.textContent = "☰";
+    });
 });
 
 
-// ======================================
-// ANIMASI SAAT SCROLL
-// ======================================
+// ==========================
+// TAHUN FOOTER OTOMATIS
+// ==========================
 
-const cards = document.querySelectorAll(".member-card");
+document.getElementById("year").textContent = new Date().getFullYear();
+
+
+// ==========================
+// ANIMASI SCROLL
+// ==========================
+
+const cards = document.querySelectorAll(
+    ".about-card, .member-card, .agenda-item"
+);
 
 const observer = new IntersectionObserver(
-
-    function(entries) {
-
-        entries.forEach(function(entry) {
+    entries => {
+        entries.forEach(entry => {
 
             if (entry.isIntersecting) {
-
                 entry.target.style.opacity = "1";
-
-                entry.target.style.transform =
-                    "translateY(0)";
-
+                entry.target.style.transform = "translateY(0)";
             }
 
         });
-
     },
-
     {
         threshold: 0.15
     }
-
 );
 
 
-cards.forEach(function(card) {
+cards.forEach(card => {
 
     card.style.opacity = "0";
-
-    card.style.transform =
-        "translateY(40px)";
-
-    card.style.transition =
-        "opacity 0.6s ease, transform 0.6s ease";
+    card.style.transform = "translateY(30px)";
+    card.style.transition = "opacity 0.6s ease, transform 0.6s ease";
 
     observer.observe(card);
-
 });
 ```
