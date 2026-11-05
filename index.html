@@ -340,14 +340,12 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        th {
-            background-color: #003554;
-            color: #f2c14e;
-            font-weight: 600;
-        }
-
-        td {
-            color: #e0f0f8;
+        /* Atur khusus untuk Kolom Mata Kuliah (Kolom ke-3) */
+        td:nth-child(3), 
+        th:nth-child(3) {
+            text-align: center;
+            padding-left: 24px;  /* Menambah jarak di sebelah kiri agar tidak mepet ke kolom jam */
+            padding-right: 24px; /* Menambah jarak di sebelah kanan */
         }
 
         tr:hover {
@@ -537,26 +535,37 @@
                         <tr>
                             <!-- Pastikan hanya ada 2 th (Kolom) di sini -->
                             <th>Hari</th>
+                            <th>Jam</th>
                             <th>Mata Kuliah </th>
+                            <th>Ruangan</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <!-- Pastikan hanya ada 2 td di setiap baris -->
+                            <tr>
                             <td>Senin</td>
+                            <td>07.00 - 10.20</td>
                             <td>Al Arabiah At takamuliah & Ilm 'Aswat</td>
+                            <td>D.12 & K.2</td>
                         </tr>
                         <tr>
                             <td>Selasa</td>
+                            <td>07.00 & 12.50</td>
                             <td>Al Arabiah At takamuliah & Bahasa Indonesia</td>
+                            <td>K.2 & D.1</td>
                         </tr>
                         <tr>
                             <td>Rabu</td>
+                            <td>07.00 & 12.50</td>
                             <td>Tauhid Dan Akhlak Tasawuf & Istima' Wal Hiwarat</td>
+                            <td>D.12 & D.1</td>
                         </tr>
                         <tr>
                             <td>Kamis</td>
+                            <td>8.40</td>
                             <td>PPKN</td>
+                            <td>D.12</td>
                         </tr>
                     </tbody>
                 </table>
@@ -572,17 +581,26 @@
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <!-- Ganti src dengan folder "images/nama-foto.jpg" sesuai arahan sebelumnya -->
-                    <img src="IMG_1722.JPG" alt="Duta Akhi Uhti 2026">
+                    <img src="images/IMG_1722.JPG.jpeg" alt="Duta Akhi Uhti 2026">
                     <p>Duta Akhi Ukhti 2026</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="IMG_0486.JPG" alt="Foto Bersama">
+                    <img src="images/IMG_0486.JPG.jpeg" alt="Foto Bersama">
                     <p>Foto Bersama</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="IMG_2123.JPG" alt="Makrab PBA 26">
+                    <img src="images/IMG_2123.JPG.jpeg" alt="Makrab PBA 26">
                     <p>Makrab PBA 26</p>
                 </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_2146.JPG.jpeg" alt="Kumpul Angkatan 26">
+                    <p>Kumpul Angkatan 26</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/IMG_2148.JPG.jpeg" alt="Aarabic Society Gank">
+                    <p>Aarabic Society Gank</p>
+                </div>
+            
             </div>
         </div>
     </section>
